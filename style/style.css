@@ -93,7 +93,7 @@ p {
 
 .left-pane {
     width: 46%;
-    background: url('/images/left.jpg');
+    background: url('../images/left.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
