@@ -1,3 +1,84 @@
-@media only screen and (min-width : 480px) and (max-width : 639px) {
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  /*header*/
 
+  .logo-name {
+    height: 70px;
+  }
+
+  .logo {
+    flex: 0 0 110px;
+  }
+
+  .name > h1 {
+    font-size: 35px;
+  }
+
+  .name > h2 {
+    font-size: 25px;
+    margin: 25px 5px 5px 5px;
+  }
+
+  .header-burger {
+    width: 40px;
+    height: 30px;
+  }
+
+  .header-burger:before,
+  .header-burger:after {
+    height: 3px;
+  }
+
+  .header-burger span {
+    height: 3px;
+    top: 13px;
+  }
+
+  .header-burger.active:before {
+    top: 13px;
+  }
+
+  .header-burger.active:after {
+    bottom: 14px;
+  }
+
+  .header-link {
+    font-size: xx-large;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+
+  .mts > img,
+  .vel > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /*care*/
+
+  .care {
+    margin-top: 120px;
+  }
+
+  .call-us {
+    width: 150px;
+    font-size: 25px;
+    margin-left: 40px;
+  }
+
+  /* about us*/
+
+  .work-time {
+    font-size: larger;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .text > p {
+    margin-top: 5px;
+  }
 }

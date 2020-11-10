@@ -23,5 +23,8 @@ $(document).ready(function () {
     autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
+    swipe: true,
+    draggable: true,
+    touchMove: true,
   });
 });
