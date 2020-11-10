@@ -1,0 +1,37 @@
+.to-top {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+
+.show-to-top {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.arrow-top {
+  border-radius: 50%;
+  border: 4px solid #337ab7;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 12px 4px #bfe2ff;
+  background: radial-gradient(#fff, #bfe2ff);
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.arrow-top path {
+  fill: rgba(191, 226, 255, 0.6);
+  stroke-width: 4;
+  stroke: #337ab7;
+  transition: fill 0.5s ease-out;
+}
+
+.arrow-top:hover path {
+  fill: #337ab7;
+}
