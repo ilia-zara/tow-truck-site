@@ -74,7 +74,7 @@ function doToDo() {
       if (!inputtodo.value.trim()) return;
 
       const todo = {
-        id: Date.now().toString().slice(-4),
+        id: Date.now().toString(),
         text: inputtodo.value,
       };
 
