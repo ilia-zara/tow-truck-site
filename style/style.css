@@ -1,7 +1,7 @@
 @import url("slider/slider.css");
 @import url("animating-phone/phone.css");
 @import url("arrow-to-top/arrow-to-top.css");
-@import url("layout/for-mobile-medium/mobile-medium.css");
+/*@import url(layout/for-mobile-medium/mobile-medium.css) (min-width: 480px);*/
 
 * {
   box-sizing: border-box;
@@ -328,6 +328,7 @@ body.lock {
   font-family: "Ubuntu", sans-serif;
   font-weight: 800;
   font-size: larger;
+  margin-bottom: 30px;
 }
 
 .we-call-you {
@@ -433,6 +434,90 @@ body.lock {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
+/*todolist*/
+
+.servicetodo {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.todolist {
+  max-width: 512px;
+  margin: auto;
+  text-align: center;
+}
+
+.counter {
+  font-size: 2.25rem;
+  margin: 0.75rem;
+}
+
+.formtodo {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+
+.inputtodo {
+  flex-grow: 1;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 1px inset #222;
+  text-align: center;
+  font-size: 1.15rem;
+  margin: 0.5rem 0.25rem;
+}
+
+.inputtodo:focus {
+  outline-color: #5bc0de;
+}
+
+.todobtn {
+  border: none;
+  outline: none;
+  background: #337ab7;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  margin: 0.5rem 0.25rem;
+  cursor: pointer;
+  user-select: none;
+  width: 92px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.todobtn:active {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.todobtn.danger {
+  background: #d9534f;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item + .item {
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.texttodo {
+  flex: 1;
+  font-size: 1.15rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #eee;
+  border-radius: 4px;
+}
+
 /* footer*/
 
 #footer {
@@ -508,4 +593,259 @@ body.lock {
 .creator > p {
   margin: 0px;
   font-size: 10px;
+}
+
+@media (min-width: 480px) {
+  /*header*/
+
+  .logo-name {
+    height: 70px;
+  }
+
+  .logo {
+    flex: 0 0 110px;
+  }
+
+  .name > h1 {
+    font-size: 35px;
+  }
+
+  .name > h2 {
+    font-size: 25px;
+    margin: 25px 5px 5px 5px;
+  }
+
+  .header-burger {
+    width: 40px;
+    height: 30px;
+  }
+
+  .header-burger:before,
+  .header-burger:after {
+    height: 3px;
+  }
+
+  .header-burger span {
+    height: 3px;
+    top: 13px;
+  }
+
+  .header-burger.active:before {
+    top: 13px;
+  }
+
+  .header-burger.active:after {
+    bottom: 14px;
+  }
+
+  .header-link {
+    font-size: xx-large;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+
+  .mts > img,
+  .vel > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /*care*/
+
+  .care {
+    margin-top: 120px;
+  }
+
+  .call-us {
+    width: 150px;
+    font-size: 25px;
+    margin-left: 40px;
+  }
+
+  /* about us*/
+
+  .work-time {
+    font-size: larger;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .text > p {
+    margin-top: 5px;
+  }
+
+  .help {
+    font-size: xx-large;
+    letter-spacing: 3px;
+  }
+
+  .serv > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5,
+  .text6 {
+    font-size: 30px;
+  }
+
+  /*reviews*/
+
+  #reviews {
+    font-size: x-large;
+  }
+
+  /*slider*/
+
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-item h2 {
+    font-size: 35px;
+  }
+
+  .slider-item p {
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  /* we call*/
+
+  #we-call {
+    font-size: x-large;
+    margin-bottom: 30px;
+  }
+
+  .label {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  /*todolist*/
+
+  .servicetodo {
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .todolist {
+    max-width: 512px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .counter {
+    font-size: 2.25rem;
+    margin: 0.75rem;
+  }
+
+  .formtodo {
+    display: flex;
+    margin-bottom: 0.25rem;
+  }
+
+  .inputtodo {
+    flex-grow: 1;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 1px inset #222;
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 0.5rem 0.25rem;
+  }
+
+  .inputtodo:focus {
+    outline-color: #5bc0de;
+  }
+
+  .todobtn {
+    border: none;
+    outline: none;
+    background: #337ab7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    color: #eee;
+    margin: 0.5rem 0.25rem;
+    cursor: pointer;
+    user-select: none;
+    width: 92px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .todobtn:active {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+  }
+
+  .todobtn.danger {
+    background: #d9534f;
+  }
+
+  .list {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item + .item {
+    border-top: 1px dashed rgba(0, 0, 0, 0.5);
+  }
+
+  .texttodo {
+    flex: 1;
+    font-size: 1.15rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: #eee;
+    border-radius: 4px;
+  }
+
+  /*footer*/
+
+  .sn-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .number-footer {
+    font-size: 22px;
+  }
+
+  .mts-footer > img,
+  .vel-footer > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .img-logo-footer {
+    width: 70px;
+  }
+
+  .name-footer {
+    font-size: 18px;
+  }
+
+  .creator > p {
+    font-size: 15px;
+  }
 }
